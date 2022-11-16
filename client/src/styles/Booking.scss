@@ -1,0 +1,106 @@
+.Booking {
+  .BookWidget {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    margin: auto;
+  }
+  img {
+    width: 100%;
+  }
+
+  .existing {
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    form {
+      display: flex;
+      justify-content: center;
+      input {
+        width: 300px;
+        padding: 10px;
+        margin-right: 10px;
+        border: 1px solid black;
+      }
+    }
+    .disclaimer {
+      font-size: 14px;
+      color: #000000ab;
+    }
+  }
+  .desc {
+    margin-top: 4rem;
+  }
+
+  .filler {
+    min-height: 50vh;
+  }
+  .loader {
+    margin-top: 3rem;
+  }
+}
+
+/* Tablet/Mobile */
+@media only screen and (max-width: 768px) {
+  .Booking {
+    .bookingResults {
+      padding: 0 10px;
+      .room-card {
+        width: 100%;
+        flex-wrap: wrap;
+        .card-img {
+          flex-basis: 100%;
+          width: 100%;
+        }
+        .card-info {
+          flex-basis: 40%;
+          width: 40%;
+        }
+        .card-price {
+          width: 60%;
+          flex-basis: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .Booking {
+    .existing {
+      form {
+        flex-direction: column;
+        margin: 0 1rem;
+        input {
+          width: auto;
+          margin: 0 0 1rem 0;
+        }
+      }
+    }
+    .bookingResults {
+      .room-card {
+        .card-info {
+          flex-basis: 100%;
+          width: 100%;
+          .amenities {
+            ul {
+              flex-wrap: wrap;
+              line-height: 2;
+            }
+          }
+        }
+        .card-price {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-top: 1rem;
+          width: 100%;
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+}

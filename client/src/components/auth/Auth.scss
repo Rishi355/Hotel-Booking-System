@@ -1,0 +1,42 @@
+.Auth {
+  .login {
+    text-align: center;
+    margin: 3rem 0;
+    h1 {
+      margin-bottom: 2rem;
+    }
+    form {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 400px;
+      margin: auto;
+      input {
+        margin: 10px 0;
+        padding: 14px 10px;
+        &:focus {
+          border: 2px solid #dbd5cd;
+          outline: #dbd5cd;
+        }
+      }
+    }
+  }
+  .btn-container {
+    text-align: center;
+    margin-top: 3rem;
+    button {
+      width: 200px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .Auth {
+    .login {
+      form {
+        width: auto;
+        margin: 0 1rem;
+      }
+    }
+  }
+}

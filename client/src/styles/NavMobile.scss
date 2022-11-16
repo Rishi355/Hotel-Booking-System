@@ -1,0 +1,122 @@
+/* Tablet/Mobile */
+
+.NavMobile {
+  i:hover {
+    cursor: pointer;
+  }
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  height: 5rem;
+  width: 100%;
+  color: white;
+  z-index: 15;
+  transition: all ease 300ms;
+  .menu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    .hamburger-menu {
+      i {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .menu-bottom {
+    position: absolute;
+    left: -100%;
+    background-color: white;
+    width: 100%;
+    color: black;
+    transition: all ease 300ms;
+    box-shadow: 0px 21px 17px -20px #00000091;
+    .contact {
+      i {
+        padding-right: 12px;
+      }
+    }
+    ul {
+      li {
+        border-top: 1px solid #ececec;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 1rem;
+        padding: 1rem 0;
+      }
+    }
+  }
+}
+.menu-active {
+  color: black;
+  background-color: white;
+  transition: all ease 300ms;
+
+  .btn {
+    background-color: black;
+    color: white;
+  }
+  .mobile-top {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.288);
+  }
+}
+.alt-color {
+  color: black;
+  background-color: white;
+  transition: all ease 300ms;
+  .btn {
+    background-color: black;
+    color: white;
+  }
+  .navTop {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.288);
+  }
+  .navBottom {
+    color: rgb(82, 82, 82);
+    a:hover {
+      color: black;
+    }
+  }
+}
+.show-menu {
+  left: 0 !important;
+  transition: all ease 300ms;
+}
+@media (hover: hover) and (pointer: fine) {
+  .NavMobile:hover {
+    color: black;
+    background-color: white;
+    transition: all ease 300ms;
+
+    .btn {
+      background-color: black;
+      color: white;
+    }
+    .mobile-top {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.288);
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .NavMobile {
+    display: block;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+  .NavMobile {
+    .menu-top {
+      .brand {
+        h1 {
+          font-size: 14px;
+        }
+      }
+      .btn {
+        padding: 12px;
+      }
+    }
+  }
+}
